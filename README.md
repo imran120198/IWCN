@@ -34,6 +34,12 @@ any database )
 
 ### Deployment Link - https://tangerine-kheer-a5f127.netlify.app/
 
+### Tech Stack
+* React
+* Javascript
+* MySql
+* CSS
+
 ## Task 3
 
 ### Problem Statement
