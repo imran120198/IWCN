@@ -18,7 +18,6 @@ export function addTodo({ title, status }) {
     method: "POST",
     data: {
       title,
-      status,
     },
   });
 }

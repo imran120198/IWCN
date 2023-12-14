@@ -5,28 +5,21 @@ import TodoItem from "./TodoItem";
 
 function Todo() {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setEror] = useState(false);
   useEffect(() => {
     handleGetTodos();
   }, []);
 
   function handleGetTodos() {
-    setLoading(true);
-    setEror(false);
     getTodos()
       .then((res) => {
         setData(res.data);
-        setLoading(false);
       })
       .catch((err) => {
-        setLoading(false);
-        setEror(true);
+        console.log(err);
       });
   }
 
   function handleAdd(title) {
-    setLoading(true);
     addTodo({
       title,
       status: false,
@@ -34,13 +27,10 @@ function Todo() {
   }
 
   function handleDelete(id) {
-    setLoading(true);
     deleteTodo(id).then(() => handleGetTodos());
   }
   return (
     <div>
-      {loading && <div> ...loading</div>}
-      {error && <div> ...error</div>}
       <AddTodo handleAdd={handleAdd} />
       <div>
         {data.map((item) => (
