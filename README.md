@@ -32,7 +32,7 @@ any database )
 4. Delete and add note should work and insert data inside db
 ```
 
-### Deployment Link - 
+### Deployment Link - https://tangerine-kheer-a5f127.netlify.app/
 
 ## Task 3
 
