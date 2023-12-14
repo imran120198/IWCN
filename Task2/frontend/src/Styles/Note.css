@@ -1,0 +1,14 @@
+.note {
+  margin-top: 50px;
+}
+
+#textArea {
+  height: 50px;
+  width: 300px;
+  border: 2px solid black;
+}
+
+button {
+  height: 50px;
+  width: 100px;
+}

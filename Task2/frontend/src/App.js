@@ -1,13 +1,13 @@
 import "./App.css";
 import Navbar from "./Components/Navbar";
+import Note from "./Components/Note";
 
-import Todo from "./Components/Todo";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Todo />
+      <Note />
     </div>
   );
 }

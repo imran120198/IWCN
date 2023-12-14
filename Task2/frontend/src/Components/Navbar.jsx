@@ -1,19 +1,13 @@
-import React from "react";
+import React from 'react'
+import '../Styles/Navbar.css'
 
 const Navbar = () => {
   return (
-    <div
-      style={{
-        backgroundColor: "black",
-        width: "100%",
-        height: "50px",
-        color: "white",
-        marginTop: "-20px",
-      }}
-    >
-      <h2>Notes</h2>
+    <div className='nav'>
+        <h2>Notes</h2>
+        
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
